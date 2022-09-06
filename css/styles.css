@@ -1,0 +1,13 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: orange;
+  }
+  p {
+    color: blue;
+  }
+
+  #ParaPhoto {
+    color: red;
+  }
