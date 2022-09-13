@@ -6,9 +6,8 @@ function getJoke(categories, blacklist )
     const https = require("https"); // Native module, no need to explicitly install
 
     const baseURL = "https://v2.jokeapi.dev";
-    const categories = ["Programming", "Misc", "Pun", "Spooky", "Christmas"];
+    
     const params = [
-        "blacklistFlags=nsfw,religious,racist",
         "idRange=0-100"
     ];
 
@@ -21,12 +20,14 @@ function getJoke(categories, blacklist )
             if(randomJoke.type == "single")
             {
                 // If type == "single", the joke only has the "joke" property
+                console.log(randomJoke);
                 console.log(randomJoke.joke);
                 console.log("\n");
             }
             else
             {
                 // If type == "twopart", the joke has the "setup" and "delivery" properties
+                console.log(randomJoke);
                 console.log(randomJoke.setup);
                 setTimeout(() => {
                     console.log(randomJoke.delivery);
@@ -42,3 +43,10 @@ function getJoke(categories, blacklist )
     });
 
 }
+
+// Test function
+
+testcategories = ["Programming", "Misc", "Pun", "Spooky", "Christmas"];
+testblacklist="nsfw,religious,racist";
+
+getJoke(testcategories, testblacklist);
