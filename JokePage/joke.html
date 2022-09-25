@@ -1,25 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css\\joke.css">
     <script src="./js/joke.js"></script>
     <title> Tim's "Joke a Day" Web Page</title>
 </head>
-
 <body>
     <h1>Tim's Joke Web Page</h1>
-
-
-
     <img src="images\\les.jfif" alt="Les" title="Les Dawson" style="Width:250px;height:250px;" class="center">
-
-
-
     <h2 id="heading2">Select which joke topics you'd like to exclude:</h2>
-
     <table id="topic">
         <tr>
             <th> Topic </th>
@@ -30,7 +20,7 @@
             <td>
                 <label for="cbNsfw" id="nsfw">Not suitable for work</label>
             </td>
-            <td>
+            <td class="tdCb">
                 <input type="checkbox" id="cbNsfw" name="nsfw">
             </td>
         </tr>
@@ -38,7 +28,7 @@
             <td>
                 <label for="cbReligious" id="religious">Non Religious</label>
             </td>
-            <td>
+            <td class="tdCb">
                 <input type="checkbox" id="cbReligious" name="religious">
 
             </td>
@@ -47,7 +37,7 @@
             <td>
                 <label for="cbPolitical" id="political">Non Political</label>
             </td>
-            <td>
+            <td class="tdCb">
                 <input type="checkbox" class="checkbox" id="cbPolitical" name="political">
             </td>
         </tr>
@@ -55,7 +45,7 @@
             <td>
                 <label for="cbRacist" id="racist">Non Racist</label>
             </td>
-            <td>
+            <td class="tdCb">
                 <input type="checkbox" class="checkbox" id="cbRacist" name="racist">
             </td>
         </tr>
@@ -63,7 +53,7 @@
             <td>
                 <label for="cbSexist" id="sexist">Non Sexist</label>
             </td>
-            <td>
+            <td class="tdCb">
                 <input type="checkbox" class="checkbox" id="cbSexist" name="sexist">
             </td>
         </tr>
@@ -71,32 +61,20 @@
             <td>
                 <label for="cbExplicit" id="explicit">Not Explicit</label>
             </td>
-            <td>
+            <td class="tdCb">
                 <input type="checkbox" class="checkbox" id="cbExplicit" name="explicit">
             </td>
         </tr>
     </table>
-
-
-
-
-
-
     <br>
     <br>
-
     <button type="button" class="buttonClass" id="clickButton" onclick="getJoke()">Click to get your Joke</button>
     <br>
     <br>
-
     <p id="showJoke"></p> <!-- add joke inside the paragraph -->
-
     <br>
     <br>
-    <!-- <button class="button button1" onclick="getJoke()">Click for your Joke</button> -->
-
     <p>Tim's first attempt implementing CSS and Javascript into a web Page
-
     </p>
     <p id="paraFootnote">The code for this and all the "bodged" projects I do can be found on my <a
             href=https://github.com/the-bodgeruk>GitHub</a> page
