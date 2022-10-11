@@ -9,8 +9,30 @@
   <title>Clock</title>
 </head>
 
-<body onload="getTime()">
+<body >
+
+
  <h1 id="clockHeading">Clock</h1>
+
+
+ <p id="radioButtons"> Please select your date and/or Time format: 
+  <br>
+ <input type="radio" id="calendar1" name="time" value="getTime()" onclick="getTime()">
+ <label for="time">Time</label>
+ <br>
+ <input type="radio" id="calendar2" name="date" value="getDate()" onclick="getDate()">
+ <label for="date">Date</label>
+ <br>  
+ <input type="radio" id="calendar3" name="dateTime" value="getDateTime()" onclick="getDateTime()">
+ <label for="dateTime">Date and Tim</label>
+ <br>
+ <br>
+ 
+
+<br>
+<br>
+
+
  <div id="clockArea"> 
  <p id="time"></p>
  </div>
