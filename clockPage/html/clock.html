@@ -17,14 +17,28 @@
 
  <p id="radioButtons"> Please select your date and/or Time format: 
   <br>
- <input type="radio" id="calendar1" name="time" value="getTime()" onclick="getTime()">
- <label for="time">Time</label>
- <br>
- <input type="radio" id="calendar2" name="date" value="getDate()" onclick="getDate()">
- <label for="date">Date</label>
- <br>  
- <input type="radio" id="calendar3" name="dateTime" value="getDateTime()" onclick="getDateTime()">
- <label for="dateTime">Date and Tim</label>
+  <table id="radioTable">
+    
+    <tr>
+      <td>
+        <input type="radio" id="calendar1" name="dateTimeRadio" value="getTime()" onclick="getTime()">
+        <label for="time">Time</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="radio" id="calendar2" name="dateTimeRadio" value="getDate()" onclick="getDate()">
+        <label for="date">Date</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="radio" id="calendar3" name="dateTimeRadio" value="getDateTime()" onclick="getDateTime()">
+        <label for="dateTime">Date and Time</label>
+      </td>
+    </tr>
+
+</table>
  <br>
  <br>
  
@@ -34,7 +48,7 @@
 
 
  <div id="clockArea"> 
- <p id="time"></p>
+ <p id="time"> test data</p>
  </div>
 
 </body>

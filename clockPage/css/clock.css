@@ -11,9 +11,21 @@ h1 {
     text-align: center;
   }
 
-.clockArea {
+p {
+    text-align: center;
+}
+
+#radioTable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#clockArea {
     background-color: black;
     color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
