@@ -34,4 +34,4 @@ function getDate() {
     
     }
 
-setInterval(() => getTime(), 1000);
+// setInterval(() => getTime(), 1000);

@@ -1,6 +1,7 @@
 const express =  require(`express`);
-
+const cors = require(`cors`);
 const app = express();
+app.use(cors());
 
 app.get(`/`, (req, res) => res.send(`We have an API!`));
 
@@ -18,7 +19,7 @@ app.get(`/date`, (req, res) => {
 
 app.get(`/dateTime`, (req, res) => {
     let today = new Date();
-    let time = today.getHours() + `:` + today.getMinutes() + `:` + today.getSeconds() + `  ` + today.getDay() + `/` + today.getMonth + `/` + today.getFullYear;
+    let time = today.getHours() + `:` + today.getMinutes() + `:` + today.getSeconds() + `  ` + today.getDay() + `/` + today.getMonth() + `/` + today.getFullYear();
     res.send(time);
 })
 
